@@ -25,7 +25,7 @@ gulp.task('default', ['watch', 'server', 'pug', 'scss', 'imagemin']);
 START WATCH
 ###########*/
 gulp.task('watch',  function(){
-  gulp.watch('dist/scss/*.scss', ['scss']);
+  gulp.watch('dist/scss/**/*.scss', ['scss']);
   gulp.watch('dist/pug/**/*.pug', ['pug']);
   gulp.watch('dist/images/*.{png,jpg,gif,svg}', ['imagemin']);
 });
@@ -67,7 +67,7 @@ gulp.task('scss', function(){
             }
           }))
          .pipe(scss())
-         .pipe(changed('dist/scss/*.scss'))
+         .pipe(changed('dist/scss/**/*.scss'))
          .pipe(autoprefixer({
           browsers: ['last 1000 versions'],
           cascade: false
@@ -87,7 +87,7 @@ gulp.task('scss', function(){
  START PUG COMPILATION
 ######################*/
 gulp.task('pug', function(){
-  var pugSrc = 'dist/pug/**/*.pug';
+  var pugSrc = 'dist/pug/*.pug';
   var buildHtml = 'build/';
 
           return gulp.src(pugSrc)
