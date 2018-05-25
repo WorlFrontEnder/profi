@@ -1,0 +1,103 @@
+include include/variable
+
+
+//- start head
+include include/head
+
+ 
+ body
+  //start header
+  div(class="header clearfix")
+   .header-in
+    .header-top
+     ul.header-top-content
+      li
+       p Весь товар в наличии </br> в Ростове-на-Дону
+
+      li
+       p Профилированная </br> мембрана от производителей
+
+      li
+       a(href="tel:+79999999999" class="phone-number") +7 (999) 999 99 99
+       a(class="header-btn")
+        span Вам перезвонить?
+    
+    .header-center
+     p Продажа и доставка профилированной дренажной мембраны в Ростове-на-Дону и области
+     a(href="#" class="delta")
+      img(src="images/icon_5.png" alt="")
+
+     a(href="#" class="tema")
+      img(src="images/icon_6.png" alt="")
+
+
+
+    //Start profile
+    div(class="profile clearfix")
+      span(class="profile__title")
+       | Где используют профилированную <br /> дренажную мембрану?
+
+
+      ul.content
+       li
+        span 1. Эксплуатируемая кровля
+        p.
+         Используется как разделительный слой между гидроизоляцией и другими слоями составляющими конструкцию
+       li
+        span 2. Защита гидроизоляции подвала
+        p.
+         Выполняет функцию гидроизоляции от повреждения грунтом обратной засыпки и создает барьер от корней деревьев
+       li
+        span 3. Благоустройство территории
+        p.
+         Является идеальным материалом для стабилизации грунта основания при строительстве тротуаров и площадок вокруг дома
+       li
+        span 4. Защита стен подвала и дренаж
+        p.
+         Обеспечивает сохранение 
+         гидроизоляции и дренаж, отводит влагу, минимизирует давление воды на стены подвалов
+       li
+        span 5. Зеленая кровля
+        p.
+         Как элемент системы, прекрасно 
+         выполняет функцию противокорневого барьеба и способствует оттоку 
+       li
+        span 6. Защита фундамента
+        p.
+         Защищает фундамент от избытка влаги и является одним из элементов системы гидроизоляции
+       li
+        span 7. Отмостка
+        p.
+         Прекрасная альтернатива традиционным отмосткам. Мембрана не подвержена 
+         образованию трещин и обеспечивает надежную защиту стен фундамента
+       li
+        span 8. Замена бетонной подготовки
+        p.
+         Практичное и технически выгодное решение для замены привычной бетонной подготовки
+
+
+
+
+  div(class="questions clearfix")
+   .questions__in
+    form(class="questions__form" action="/")
+     span.
+       Есть вопросы? <br />
+       получите консультацию у менеджера
+     input(type="text" placeholder="введите номер телефона")
+
+     button(type="submit")
+      span Заказать звонок
+
+    div(class="products clearfix")
+     span(class="products__title") профилированные мембраны ТЕМА
+     ul(class="products__content")
+      include include/product
+
+    div(class="products products__delta")
+     span(class="products__title") профилированные мембраны delta
+     ul(class="products__content")
+      include include/delta
+
+
+include include/footer

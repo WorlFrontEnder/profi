@@ -1,0 +1,59 @@
+.questions{
+	background: url(../images/bg_3.png) 0 0 repeat-x;
+	background-size: cover;
+	max-width: 100%;
+	width: 100%;
+	min-height: 500px;
+
+	.questions__in{
+    background: url(../images/line.png) 0 0 no-repeat,
+                url(../images/line.png) 0 346px no-repeat;
+    z-index: 1000;
+    position: relative;
+    top: -30px;
+    padding: 100px 0 125px 0;
+
+	}
+
+	.questions__form {
+		max-width: 880px;
+		margin: 0 auto;
+
+		> span {
+	     text-transform: uppercase;
+	     color: $white;
+	     @include center-bold-white(normal, 24px, 'PT Serif', left);
+	     background: url(../images/icon_3.png) left top no-repeat, 
+	                url(../images/icon_4.png) 504px 42px no-repeat;
+	     display: $block;
+	     padding: 20px 72px 20px 31px;
+		}
+
+		input[type="text"] {
+		 background-color: $white;
+		 @include border-radius-btn(5px);
+		 width: 290px;
+		 height: 47px;
+		 margin: 31px 54px 0 274px;
+		 border:none;
+		 @include center-bold-white(normal, 18px, 'PT Serif', center);
+		 color: $gray; 
+		}
+
+		button{
+      background-color: $white;
+      @include border-radius-btn(5px);
+      width: 225px;
+      height: 47px;
+      border:none;
+      cursor: pointer;
+      @include box-shadow(-6px, 4px, 10px, #483b34);
+
+     span{
+     	@include center-bold-white(normal, 18px, 'PT Serif', center);
+     	color: $brown;
+     	display: $block;
+     }
+		}
+	}
+}

@@ -1,0 +1,58 @@
+
+*{
+  -moz-box-sizing: border-box;
+   -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     -ms-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+html, body{
+ height: 100%;
+ background-color: $white;
+ font-family: 'PT Serif';
+ color: $white;
+}
+
+a{
+  outline: none;
+  text-decoration: none;
+  }
+img{
+  outline: none;
+  max-width: 100%;
+  border:none;
+ }
+ul{
+  list-style: none;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+input[type="text"]::-moz-placeholder{
+  padding: 1px 0 20px 0;
+}
+
+input[type="text"]::-webkit-input-placeholder{
+  padding: 1px 0 20px 0;
+}
+
+input[type="text"]:-ms-input-placeholder{
+  padding: 1px 0 20px 0;
+}
+input[type="text"]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input[type="text"]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input[type="text"]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+

@@ -1,0 +1,67 @@
+/*
+Start profile */
+
+.profile{
+  width: $main-width;
+  margin: $margin-center;
+ .profile__title{
+  color: $white;
+  background:url(../images/icon_3.png) left top no-repeat,
+             url(../images/icon_4.png) 474px 43px no-repeat;
+  font-size: $size24;
+  text-transform: uppercase;
+  padding: 20px 0 20px 31px;
+  display: $block;
+ }
+
+ ul.content{
+   background: url(../images/bg_2.png) 0 0 no-repeat;
+   min-height: 1701px;
+   padding-top: 30px;
+  li{
+  	max-width: 380px;
+    width: 100%;
+    margin: 23px 0 0 282px;
+    
+    &:nth-child(2){
+    	margin: 105px 0 0 630px;
+    }
+
+    &:nth-child(3){
+      margin: 105px 0 0 280px;
+    }
+
+    &:nth-child(4){
+      margin: 105px 0 0 630px;
+    }
+
+    &:nth-child(5){
+      margin: 105px 0 0 280px;
+    }
+
+    &:nth-child(6){
+      margin: 105px 0 0 630px;
+    }
+
+    &:nth-child(7){
+      margin: 105px 0 0 280px;
+    }
+
+    &:last-child{
+      margin: 105px 0 0 630px;
+    }
+
+  	span{
+     color: $white;
+     @include center-bold-white(bold, 18px, 'PT Serif', left);
+  	}
+
+   p{
+     color: $white;
+     @include center-bold-white(normal, 18px, 'PT Serif', left);
+     line-height: 25px;
+     padding: 5px 0 0 0;
+   }
+  }
+ }
+}

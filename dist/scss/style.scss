@@ -1,0 +1,20 @@
+//- Start variables
+@import 'variables/variables';
+@import 'variables/color';
+@import 'variables/font-size';
+
+//-Start mixin
+@import 'mixin/mixin';
+
+//- Start restart
+@import 'restart/restart';
+
+//- Start section
+@import 'sections/header';
+@import 'sections/profile';
+@import 'sections/questions';
+@import 'sections/products';
+@import 'sections/footer';
+
+//-Start extends
+@import 'extends/extends';

@@ -1,0 +1,23 @@
+//- 
+@mixin center-bold-white($bold, $size, $font-family, $align){
+ font: $bold $size $font-family;
+ text-align: $align;
+}
+
+
+@mixin border-radius-btn($radius){
+ -o-border-radius: $radius;
+ -moz-border-radius: $radius;
+ -webkit-border-radius: $radius;
+ -ms-border-radius: $radius;
+ border-radius: $radius;
+}
+
+
+@mixin box-shadow($horizontal, $vertical, $blurring, $color){
+	-o-box-shadow: $horizontal $vertical $blurring $color;
+	-moz-box-shadow: $horizontal $vertical $blurring $color;
+	-webkit-box-shadow: $horizontal $vertical $blurring $color;
+	-ms-box-shadow: $horizontal $vertical $blurring $color;
+  box-shadow: $horizontal $vertical $blurring $color;
+}

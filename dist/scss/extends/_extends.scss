@@ -1,0 +1,27 @@
+%main-padding {
+	padding: 1em;
+}
+
+%relative{
+	position: relative;
+}
+
+article {
+	@extend %main-padding;
+	color: #005288;
+}
+
+
+
+.sidebar {
+	@extend %main-padding;
+}
+
+/* Compiled CSS */
+article, .sidebar {
+  padding: 1em;
+}
+
+article {
+  color: #005288;
+}

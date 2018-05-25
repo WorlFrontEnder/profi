@@ -1,0 +1,54 @@
+- var delta = [{title: "delta nb", imgUrl: "images/img_2.png"}];
+- var security = "Для механической защиты изоляции и утеплителя или в качестве замены бетонной подготовки используется специальная профилированная мембрана Delta NB, надежно разделяющая поверхность основания и влажную почву. Выполняет роль деформационного слоя для перераспределения нагрузки. Может использоваться для создания систем питьевой воды";
+
+mixin profil-card(mexanick)
+ li
+  div(class="products__left")
+   span(class="product__title")=mexanick.title
+    img(src=mexanick.imgUrl)
+    a(href="#" class="products__btn")
+     span Заказать
+  div(class="products__right")
+   p.
+    #{security}
+   div(class="products__btns")
+    div(class="products__btn-left")
+     a(href="#" class="product__btn")
+      span Описание
+     a(href="#" class="product__btn")
+      span Характеристики
+    div(class="products__btn-right")
+     a(href="#" class="product__btn-2")
+      span На складе 123 р/м
+
+for mexanick in delta
+   +profil-card(mexanick)
+
+
+
+
+- var deltaMs = [{title: "delta MS", imgUrl: "images/img_3.png"}];
+- var description = "Высокопрочная профилированная мембрана Delta MS характеризуется практичностью, долговечностью и широкой сферой применения. Ее предазначение - механическая защита изоляции, создание вертикального либо горизонтального  дренажа, организация подземных сооружений и конструкций, замена бетонной подготовки.";
+
+mixin profil-card(beton)
+ li
+  div(class="products__left")
+   span(class="product__title")=beton.title
+    img(src=beton.imgUrl)
+    a(href="#" class="products__btn")
+     span Заказать
+  div(class="products__right")
+   p.
+    #{description}
+   div(class="products__btns")
+    div(class="products__btn-left")
+     a(href="#" class="product__btn")
+      span Описание
+     a(href="#" class="product__btn")
+      span Характеристики
+    div(class="products__btn-right")
+     a(href="#" class="product__btn-2")
+      span На складе 169 р/м
+
+for beton in deltaMs
+   +profil-card(beton)

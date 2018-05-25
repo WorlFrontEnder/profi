@@ -1,0 +1,90 @@
+/*
+Start header
+############*/
+.header{
+  background: url(../images/bg.png) no-repeat;
+	min-height: 2597px;
+
+	.header-in{
+		margin: $margin-center;
+		width: $main-width;
+}
+
+.header-top{
+	padding-top: 20px;
+  overflow: hidden;
+  padding-bottom: 110px;
+  
+		 .header-top-content{
+		 	 li{
+		 	 	  float: $float-left;
+          position: relative;
+		 	 	 p{
+          @include center-bold-white(bold, 24px, 'PT Serif', center);
+ 		 	 	 }
+         &:first-child:before{
+          content: "";
+          display: $block;
+          float: $float-left;
+          background: url(../images/icon.png) 0 0 no-repeat;
+          width: 105px;
+          height: 100px;
+          position: absolute;
+          top: 80px;
+          left: 80px;
+        }
+		 	 }
+
+		 	 li:nth-child(2){
+		 	 	margin: $margin-center;
+		 	 	width: 456px;
+		 	 }
+		 	 li:last-child{
+         float: $float-right;
+
+         a.phone-number{
+         	color: $white;
+         	display: $block;
+         	font-size: $size24;
+         }
+
+         a.header-btn{
+         	display: $block;
+         	width: 225px;
+         	height: 48px;
+          text-align: $center;
+          background-color: $white;
+          @include border-radius-btn(5px);
+          margin-top: 15px;
+
+         	span{
+         		vertical-align: -50%;
+         		color: $brown;
+         		font-size: $size18;
+         	}
+         }
+		 	 }
+		 }
+		}
+	}
+
+
+// start header center
+.header-center{
+ width: 770px;
+ background: url(../images/icon_2.png) 0 0 no-repeat;
+ padding: 25px 0 45px 35px;
+ p{
+  color: $white;
+  @include center-bold-white(bold, 36px, 'PT Serif', left);
+  text-transform: uppercase;
+  line-height: 52px;
+ }
+ .delta{
+  margin: 0 0 0 66px;
+ }
+ .tema{
+  margin: 0 90px 0 0;
+  float: $float-right;
+ }
+}
